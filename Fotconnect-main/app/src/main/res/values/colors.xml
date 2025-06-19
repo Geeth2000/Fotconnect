@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#2168BA</color>
+    <color name="whitetext">#D9D9D9</color>
+    <color name="loginbox">#338CF6</color>
+    <color name="buttonbg">#021126</color>
+
+</resources>

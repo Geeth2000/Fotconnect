@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "267928454084",
+    "project_id": "fotnews-40b55",
+    "storage_bucket": "fotnews-40b55.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267928454084:android:528d25a0f70690fb59da91",
+        "android_client_info": {
+          "package_name": "com.example.fotconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmTOaObL2mPYk3r19b0t-q_eD6twmisT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

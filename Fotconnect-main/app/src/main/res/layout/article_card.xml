@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This XML defines the layout for a single article card used within a RecyclerView.
+It uses a CardView for a visually appealing, elevated card-like appearance.
+-->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    android:background="#e0ecff"> <!-- Light blue background for the card -->
+
+    <!-- LinearLayout inside the CardView to arrange content vertically. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TextView for displaying the article title. -->
+        <TextView
+            android:id="@+id/articleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Article Title"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000" /> <!-- Black text color -->
+
+        <!-- TextView for displaying a short summary of the article. -->
+        <TextView
+            android:id="@+id/articleSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Short summary goes here..."
+            android:textSize="14sp"
+            android:textColor="#444" /> <!-- Dark gray text color -->
+
+        <!-- TextView for displaying the publication date of the article. -->
+        <TextView
+            android:id="@+id/articleDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Date Published : Dec 25, 2024"
+            android:textSize="12sp"
+            android:textColor="#444" />
+
+        <!-- ImageView for displaying the article's main image. -->
+        <ImageView
+            android:id="@+id/articleImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/error" /> <!-- Default placeholder image -->
+
+        <!-- TextView acting as a "Read more" button/link. -->
+        <TextView
+            android:id="@+id/readMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Read more ..."
+            android:textSize="12sp"
+            android:textColor="#0000ee"
+        android:layout_gravity="end" /> <!-- Aligns to the end (right) of the LinearLayout -->
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

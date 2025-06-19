@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This is the layout for the SportsFragment.
+It uses a LinearLayout as the root, set to match the parent's width and height.
+The background color is set to a light blue (#a1c5f5) and it has 12dp padding.
+It contains a RecyclerView to display a list of sport news articles.
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a1c5f5"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- RecyclerView to display the list of articles. -->
+    <!-- It occupies all available vertical space due to layout_weight="1". -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSports"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
